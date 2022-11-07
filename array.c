@@ -30,6 +30,14 @@ int search_max(const int array[], const unsigned int size)
 
 int search_index(const int array[], const unsigned int size, const int number)
 {
+    int index = 0;
+    for (unsigned int i = 0; i < size; i++) {
+        if (array[i] == number) {
+            index = i;
+            break;
+        }
+    }
+    return index;
 }
 
 int search_min(const int array[], const unsigned int size)
@@ -45,11 +53,38 @@ int search_min(const int array[], const unsigned int size)
 
 void reverse_array(int *array, const unsigned int size)
 {
-    // код
+    int revers = 0;
+    for (int i = 0, j = size - 1; i < size / 2; ++i, --j) {
+        revers = array[i];
+        array[i] = array[j];
+        array[j] = revers;
+    }
 }
 
 int equal(const int arrayFirst[], const unsigned int sizeFirst,
           const int arraySecond[], const unsigned int sizeSecond)
 {
-    // код
+    int equal = 1;
+    if (sizeFirst == sizeSecond) {
+        for (int i = 0; i < sizeSecond; ++i) {
+            if (arrayFirst[i] != arraySecond[i]) {
+                equal = 0;
+                break;
+            }
+        }
+    }
+    return equal;
+}
+void buble_sorting(int *array, const unsigned int size)
+{
+    int buble = 0;
+    for (unsigned int i = 0; i < size - 1; ++i) {
+        for (unsigned int j = 0; j, size - i - 1; ++j) {
+            if (array[j] > array[j + 1]) {
+                buble = array[j];
+                array[j] = array[j + 1];
+                buble = array[j + 1];
+            }
+        }
+    }
 }
