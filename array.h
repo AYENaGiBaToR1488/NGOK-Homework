@@ -15,5 +15,7 @@ int search_index(const int array[], const unsigned int size, const int number);
 // функция сравнения двух массивов(возвращает 1 или 0)
 int equal(const int arrayFirst[], const unsigned int sizeFirst,
           const int arraySecond[], const unsigned int sizeSecond);
+// функция пузырьковой сортировки
+void buble_sorting(int *array, const unsigned int size);
 
 #endif // _ARRAY_H_
