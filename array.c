@@ -89,7 +89,7 @@ void buble_sorting(int *array, const unsigned int size)
         }
     }
 }
-int binaryseatch(int arrayFirst[], int sizeFirst, int number)
+int binarysearch(int arrayFirst[], int sizeFirst, int number)
 {
     int min_i = 0;
     int max_i = sizeFirst;
@@ -98,8 +98,14 @@ int binaryseatch(int arrayFirst[], int sizeFirst, int number)
     while (1) {
         if (number > arrayFirst[mid_i]) {
             min_i = mid_i;
-            max_i = mid_i;
             mid_i = (min_i + max_i) / 2;
-        } else if ()
+        } else if (number == arrayFirst[mid_i]) {
+            Y = mid_i;
+        } else {
+            max_i = mid_i;
+            mid_i = (max_i + mid_i - 1) / 2;
+        }
+        break;
     }
+    return Y;
 }

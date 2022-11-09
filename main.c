@@ -28,4 +28,6 @@ int main()
 
     buble_sorting(arrayFirst, SIZE_1);
     print_array(arrayFirst, SIZE_1);
+
+    preintf("Y = %d \n", binarysearch(arrayFirst, SIZE_1, 37));
 }

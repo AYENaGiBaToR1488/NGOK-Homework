@@ -17,5 +17,6 @@ int equal(const int arrayFirst[], const unsigned int sizeFirst,
           const int arraySecond[], const unsigned int sizeSecond);
 // функция пузырьковой сортировки
 void buble_sorting(int *array, const unsigned int size);
-
+// функция бинарного поиска
+int binarysearch(int arrayFirst[], int sizeFirst, int number);
 #endif // _ARRAY_H_
